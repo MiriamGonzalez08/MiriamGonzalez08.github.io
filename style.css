@@ -1,0 +1,63 @@
+*{
+    font-family: Lato;
+}
+header{
+    background-color: #A63D17;
+}
+/* color de palabras de menu */
+.nav-item a{
+    color: blue;
+}
+/* color para boton perfil */
+#boton-perfil{
+    background-color: black;
+}
+.nav-item a:hover{
+    color: black;
+}
+#app{
+    color: #A63D17;
+    font-family: Roboto Mono;
+}
+.boton-cv{
+    background-color: green;
+    color: rgb(204, 203, 206);
+}
+#habilidades{
+    background-color: #A63D17;
+    color: beige;
+} 
+.btn-proyecto{
+    background-color: #A63D17;
+}
+.btn-proyecto a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.card .card-title{
+    color: #A63D17;
+}
+#contacto{
+    background-color: red;
+    color: #A63D17;
+}
+#contacto p{
+    color: blueviolet;
+}
+#btn-contacto{
+    background-color: aqua;
+    color: antiquewhite;
+}
+#btn-contacto:hover{
+    background-color: black;
+}
+footer li a i{
+    color: green;
+}
+footer p{
+    color: green;
+}
+footer p a {
+    text-decoration: none;
+    color: greenyellow;
+}
