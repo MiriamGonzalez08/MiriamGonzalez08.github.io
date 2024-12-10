@@ -24,15 +24,15 @@
 
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <!-- Icon -->
-      <i class="bi bi-code-slash p-3"></i>
-      <span class="fs-4">Miriam González Acosta</span>
+      <!-- Icon -->&nbsp&nbsp&nbsp&nbsp
+      <i id="icono-principal" class="bi bi-code-slash fs-3"></i>&nbsp &nbsp
+      <span class="fs-2 nombre-m" style="--clr:#39594D">Miriam González Acosta</span>
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item boton-perfil"><a id="boton-perfil" href="#" class="nav-link active perfil"
-          aria-current="page">Perfil</a></li>
-      <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li class="nav-item boton-perfil"><a id="boton-perfil" href="#perfil" class="nav-link active perfil" aria-current="page">Perfil</a></li>
+      <li class="nav-item"><a href="#habilidades" class="nav-link habilidades">Habilidades</a>
+      </li>
       <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
       <li class="nav-item"><a href="#testimonios" class="nav-link">Colaboraciones</a></li>
       <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -41,151 +41,66 @@
   <main>
     <!-- Perfil -->
     <div class="hero">
-      <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4 rounded-circle" src="assets/fotoPerfil.png" alt="" width="300">
-        <h1 class="display-5 fw-bold text-body-emphasis">Miriam González Acosta</h1>
-        <h2 id="app"></h2>
+      <div class=" perfil px-4 py-5 my-5 text-center" id="perfil">
+        <img class="d-block mx-auto mb-5 rounded-circle" src="assets/fotoPerfil.png" alt="" width="250">
+        <!-- <h1 class="display-5 fw-bold text-body-emphasis">Acerca de mi</h1> -->
+        <h2 id="app" class="text-transition mb-3"></h2>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">Egresada de la Ingeniería en Desarrollo y Gestión de Software me considero una persona
-            responsable y proactiva. Con disposición por seguir aprendiendo y trabajar, buscando mi primera experiencia
-            laboral en el área de desarrollo Frontend.</p>
+            con una gran
+            pasión por el desarrollo Front-end, responsable y proactiva. Con disposición por seguir aprendiendo y
+            superarme día a día como persona y desarrolladora front-end.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4 boton-cv">Te muestro mi CV</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 boton-cv"><a target="_blank"
+                class="text-decoration-none"
+                href="https://drive.google.com/file/d/1je1cYz_q28R8s1mgiSfPNNFL0JJo4kW1/view?usp=drive_link">Te muestro
+                mi CV</a></button>
           </div>
         </div>
       </div>
     </div>
     <!-- Habilidades -->
-     <div id="habilidades">
-    <div class="habilidades container px-4 py-5" id="icon-grid habilidades">
-      <h2 class="pb-2 border-bottom">Habilidades profesionales</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-        <!-- HTML -->
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-filetype-html px-2 fs-1"></i>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML</h3>
-            <p>90%</p>
+    <div id="habilidades">
+      <div class="habilidades container px-4 py-5" id="icon-grid habilidades">
+        <h2 class="pb-2 border-bottom">Habilidades</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-body">Me desempeño principalmente como desarrolladora frontend, donde he adquirido
+              experiencia utilizando diferentes tecnologías. Sin embargo, también poseo conocimientos en desarrollo
+              backend, lo que me permite comprender el flujo completo de una aplicación. De igual forma, he trabajado
+              con diversas herramientas y tecnologías tanto para frontend como para backend.</p>
           </div>
-        </div>
-        <!-- CSS -->
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-filetype-css px-2 fs-1"></i>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
-            <p>85%</p>
-          </div>
-        </div>
-        <!-- JS -->
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-filetype-js px-2 fs-1"></i>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">JavaScript</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <!-- C# -->
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-braces px-2 fs-1"></i>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C#</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <!-- SQL -->
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-filetype-sql px-2 fs-1"></i>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SQL</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-            <use xlink:href="#toggles2"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-            <use xlink:href="#geo-fill"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-            <use xlink:href="#tools"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Proyectos -->
-    <div id="proyectos" class="proyectos container mt-5">
-      <h2 class="pb-2 border-bottom">Proyectos</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="assets/proyectoPinterest.png" alt="">
-            <div class="card-body">
-              <h3>Clon de pinterest</h3>
-              <p class="card-text">Página creada en el Bootcamp de TecnoloChicas, usando HTML y CSS, representando un
-                clon de Pinterest.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="https://pinterest-clon-black.vercel.app/">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="https://github.com/MiriamGonzalez08/pinterest-clon.git">GitHub</a></button>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <i class="bi bi-filetype-html fs-1"></i>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Desarrollo front-end</h4>
+                <p class="text-body-secondary">HTML, CSS y JavaScript son las prinipales tecnoligías que utilizo en el
+                  desarrollo front-end.
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="assets/proyectoBts.png" alt="">
-            <div class="card-body">
-              <h3>Info BTS</h3>
-              <p class="card-text">Esta página se desarrollo como proyecto de la universidad usando HTML y CSS. Brinda
-                información de la banda de Kpop BTS.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="">GitHub</a></button>
-                </div>
-                <small class="text-body-secondary">HTML,CSS</small>
+
+              <div class="col d-flex flex-column gap-2">
+                <i class="bi bi-braces fs-1"></i>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Desarrollo front-end</h4>
+                <p class="text-body-secondary">Algunos de los lenguajes de programación en los que he desarrollado
+                  aplicaciones son C#, Java y PHP.</p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="assets/proyectoPinterest.png" alt="">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
-                      href="">GitHub</a></button>
-                </div>
-                <small class="text-body-secondary">HTML,CSS</small>
+
+              <div class="col d-flex flex-column gap-2">
+                <i class="bi bi-bootstrap fs-1"></i>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Bootstrap</h4>
+                <p class="text-body-secondary">Bootstrap es un framework que me gusta implementar debido a su facilidad
+                  de uso y la rapidez con la que permite desarrollar aplicaciones responsivas.</p>
+              </div>
+
+              <div class="col d-flex flex-column gap-2">
+                <i class="bi bi-github fs-1"></i>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">GitHub</h4>
+                <p class="text-body-secondary">GitHub es la herramienta que me gusta implementar no solo para almacenar
+                  proyectos sino también para controlar las versiones de los mismos.</p>
               </div>
             </div>
           </div>
@@ -200,13 +115,17 @@
           <div class="carousel-item active">
             <div class="d-flex justify-content-center">
               <!-- Inicio card -->
-              <div class="card border-0" style="width: 18rem;">
-                <img src="assets/perfil1.jpeg" class="card-img-top rounded-circle" alt="imagen de testimonio" width="100">
-                <h3 class="card-title text-center mb-2">Ing. Anel Montes</h3>
-                <h5 class="card-subtitle mb-3 text-center text-body-secondary">Mentora en Tecnolochicas Pro</h5>
+              <div class="card border-0" style="width: 20rem;">
+                <img src="assets/perfil1.png" class="img-card card-img-top rounded-circle mb-2"
+                  alt="imagen de testimonio">
+                <h2 class="card-title text-center mb-2">Ing. Anel Montes</h2>
+                <h6 class="card-subtitle mb-3 text-center text-body-secondary">Mentora en Tecnolochicas Pro</h6>
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text texto">Miriam muestra un rápido progreso en la adquisición de habilidades técnicas
+                    clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad de
+                    aprender constantemente son cualidades valiosas en el campo de la programación. No tengo dudas de
+                    que Miriam seguirá creciendo y haciendo contribuciones significativas como desarrolladora frontend
+                    en el futuro.</p>
                 </div>
               </div>
               <!-- Fin card -->
@@ -216,12 +135,15 @@
             <div class="d-flex justify-content-center">
               <!-- Inicio card -->
               <div class="card border-0" style="width: 18rem;">
-                <img src="assets/perfil2.jpeg" class="card-img-top rounded-circle" alt="imagen de testimonio" width="100">
-                <h3 class="card-title text-center">titulo</h3>
-                <h5 class="card-subtitle mb-2 text-center text-body-secondary">subtitulo</h5>
+                <img src="assets/perfil2.jpeg" class="card-img-top rounded-circle mb-2" alt="imagen de testimonio"
+                  width="100">
+                <h2 class="card-title text-center mb-3">María del Rayo Ponce Vargas</h2>
+                <h6 class="card-subtitle mb-2 text-center text-body-secondary">Estudiante del bootcamp Tecnolochicas Pro
+                </h6>
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text texto">Como compañera de Miriam durante el Bootcamp de Techonolochicas Pro,
+                    considero que es una persona dedicada y atenta que busca mejorar sus habilidades como desarrolladora
+                    Frontend. Seguramente, debido a su desempeño, se convertirá en una profesional exitosa.</p>
                 </div>
               </div>
               <!-- Fin card -->
@@ -232,11 +154,14 @@
               <!-- Inicio card -->
               <div class="card border-0" style="width: 18rem;">
                 <img src="assets/perfil3.jpeg" class="card-img-top rounded-circle" alt="imagen de testimonio">
-                <h3 class="card-title text-center">titulo</h3>
-                <h5 class="card-subtitle mb-2 text-center text-body-secondary">subtitulo</h5>
+                <h2 class="card-title text-center mb-2">Araceli González Luna</h2>
+                <h6 class="card-subtitle mb-2 text-center text-body-secondary">Estudiante del bootcamp Tecnolochicas Pro
+                </h6>
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text texto">Tuve la gran oportunidad de compartir con Miriam en el bootcamp de
+                    Technolochicas Pro. Sin duda alguna, demostró ser una excelente desarrolladora front-end, con una
+                    notable facilidad de aprendizaje y destacando por sus magníficos diseños. Fue un placer conocerle, y
+                    espero seguir de cerca sus futuras creaciones. El futuro que le espera es asombroso.</p>
                 </div>
               </div>
               <!-- Fin card -->
@@ -273,21 +198,16 @@
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a target="_blank" href="https://www.linkedin.com/in/miriam-gonz%C3%A1lez-acosta-069440224/"
-          class="nav-link px-2"><i class="bi bi-linkedin fs-5"></i></a></li>
-      <li class="nav-item"><a target="_blank" href="https://www.instagram.com/ilove.strawberry8/"
-          class="nav-link px-2"><i class="bi bi-instagram fs-5"></i></a></li>
-      <li class="nav-item"><a target="_blank" href="https://www.threads.net/@ilove.strawberry8"
-          class="nav-link px-2"><i class="bi bi-threads fs-5"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 "><i
-            class="bi bi-twitter-x fs-5"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 "><i class="bi bi-discord fs-5"></i></a>
+          class="nav-link px-2"><i class="bi bi-linkedin fs-4"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://www.threads.net/@ilove.strawberry8" class="nav-link px-2"><i
+            class="bi bi-threads fs-4"></i></a></li>
+      <li class="nav-item"><a target="_blank" href="https://github.com/MiriamGonzalez08" class="nav-link px-2 "><i
+            class="bi bi-github fs-4"></i></a>
       </li>
     </ul>
-    <p class="text-center">Creado por Miriam González Acosta en el bootcamp de <a
-        class="text-decoration-none" href="https:tecnolochicas.mx/"> Teconolochicas Pro</a></p>
+    <p class="text-center">Creado por Miriam González Acosta en el bootcamp de <a class="text-decoration-none"
+        href="https:tecnolochicas.mx/"> Teconolochicas Pro</a></p>
   </footer>
-
-
 
 
   <!-- Bootstrap -->

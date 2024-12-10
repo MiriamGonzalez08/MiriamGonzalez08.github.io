@@ -1,63 +1,140 @@
-*{
-    font-family: Lato;
+* {
+  font-family: Raleway, Roboto+Mono;
 }
-header{
-    background-color: #A63D17;
+
+header {
+  background-color: #27272c;
 }
+
+.nombre-m{
+  color: #ccc;
+}
+
+.nombre-m:hover{
+  color: var(--clr);
+  letter-spacing: 0.2rem;
+  animation: texto 3s infinite;
+}
+
+#icono-principal {
+  color: #ccc;
+}
+
 /* color de palabras de menu */
-.nav-item a{
-    color: blue;
+.nav-item a {
+  color: #ccc;
 }
+
+.nav-item a:hover {
+  color: #39594D;
+}
+
 /* color para boton perfil */
-#boton-perfil{
-    background-color: black;
+#boton-perfil {
+  background-color: #31325c;
 }
-.nav-item a:hover{
-    color: black;
+
+#boton-perfil:hover {
+  background-color: #023059;
 }
-#app{
-    color: #A63D17;
-    font-family: Roboto Mono;
+
+ #app{
+    color: #27272c;
+    font-family: "Roboto Mono";
 }
-.boton-cv{
-    background-color: green;
-    color: rgb(204, 203, 206);
+
+.text-transition {
+  color: #000;
+  font-family: "Roboto Mono";
 }
-#habilidades{
-    background-color: #A63D17;
-    color: beige;
-} 
-.btn-proyecto{
-    background-color: #A63D17;
+
+.boton-cv {
+  background-color: green;
+  color: rgb(204, 203, 206);
 }
-.btn-proyecto a{
-    text-decoration: none;
-    color: aliceblue;
+
+.boton-cv a {
+  color: rgb(204, 203, 206);
 }
-.card .card-title{
-    color: #A63D17;
+
+/* #habilidades {
+  background-color: #A63D17;
+  color: beige;
+} */
+
+.btn-proyecto {
+  background-color: #A63D17;
 }
-#contacto{
-    background-color: red;
-    color: #A63D17;
+
+.btn-proyecto a {
+  text-decoration: none;
+  color: aliceblue;
 }
-#contacto p{
-    color: blueviolet;
+
+.card .card-title {
+  color: #A63D17;
 }
-#btn-contacto{
-    background-color: aqua;
-    color: antiquewhite;
+
+.texto {
+  text-align: justify;
 }
-#btn-contacto:hover{
-    background-color: black;
+
+#contacto {
+  background-color: red;
+  color: #A63D17;
 }
-footer li a i{
-    color: green;
+
+#contacto p {
+  color: blueviolet;
 }
-footer p{
-    color: green;
+
+#btn-contacto {
+  background-color: aqua;
+  color: antiquewhite;
 }
+
+#btn-contacto:hover {
+  background-color: black;
+}
+
+footer li a i {
+  color: green;
+}
+
+footer p {
+  color: green;
+}
+
 footer p a {
-    text-decoration: none;
-    color: greenyellow;
+  text-decoration: none;
+  color: greenyellow;
+}
+
+
+/* @keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+
+  50% {
+    box-shadow: 0 0 25px #2c2d44;
+  }
+
+  100% {
+    box-shadow: #27272c;
+  }
+} */
+
+@keyframes texto {
+  0% {
+    text-shadow: #27272c;
+  }
+
+  50% {
+    text-shadow: 0 0 25px var(--clr);
+  }
+
+  100% {
+    text-shadow: #27272c;
+  }
 }
