@@ -1,16 +1,32 @@
 * {
   font-family: Raleway, Roboto+Mono;
+
 }
 
 header {
   background-color: #27272c;
 }
+body{
+  background-color: #fafcfe;
+}
+h1{
+  color: #ccc;
+}
+h2{
+  color: #2b373f;
+}
+h4{
+  color: #2a2f36;
+}
+p{
+  color: #000;
+}
 
-.nombre-m{
+.nombre-m {
   color: #ccc;
 }
 
-.nombre-m:hover{
+.nombre-m:hover {
   color: var(--clr);
   letter-spacing: 0.2rem;
   animation: texto 3s infinite;
@@ -26,53 +42,58 @@ header {
 }
 
 .nav-item a:hover {
-  color: #39594D;
+  color: #39594d;
+  
 }
 
 /* color para boton perfil */
 #boton-perfil {
-  background-color: #31325c;
+  background-color: #2b373f;
+  /* background-color: #31325c; */
 }
 
 #boton-perfil:hover {
-  background-color: #023059;
+  background-color: #39594D;
 }
 
- #app{
-    color: #27272c;
-    font-family: "Roboto Mono";
-}
-
-.text-transition {
-  color: #000;
+#app {
+  color: #39594d;
   font-family: "Roboto Mono";
 }
 
 .boton-cv {
-  background-color: green;
+  background-color: #2b373f;
+  color: rgb(204, 203, 206);
+}
+
+.boton-cv:hover{
+  background-color: #27272c;
   color: rgb(204, 203, 206);
 }
 
 .boton-cv a {
-  color: rgb(204, 203, 206);
+  color: #ccc;
 }
 
-/* #habilidades {
-  background-color: #A63D17;
-  color: beige;
-} */
+#habilidades {
+  color: #39594d;
+} 
 
 .btn-proyecto {
-  background-color: #A63D17;
+  background-color: #2b373f;
 }
 
 .btn-proyecto a {
   text-decoration: none;
-  color: aliceblue;
+  color: #ccc;
 }
-
+/* .card-testimonio{
+  background-color: #2b3f47;
+} */
 .card .card-title {
-  color: #A63D17;
+  color: #39594d;
+  /* font-family: "Roboto Mono"; */
+  font-weight: bold;
 }
 
 .texto {
@@ -80,34 +101,35 @@ header {
 }
 
 #contacto {
-  background-color: red;
-  color: #A63D17;
+  background-color: #2b373f;
+  color: #39594D;
 }
 
 #contacto p {
-  color: blueviolet;
+  color: #ccc;
 }
 
 #btn-contacto {
-  background-color: aqua;
+  background-color: #39594D;
   color: antiquewhite;
 }
 
 #btn-contacto:hover {
-  background-color: black;
+  background-color: #27272c;
 }
 
 footer li a i {
-  color: green;
+  color: #39594D;
 }
 
 footer p {
-  color: green;
+  color: #39594D;
 }
 
 footer p a {
   text-decoration: none;
-  color: greenyellow;
+  color: #2b3f47;
+  font-weight: bold;
 }
 
 
